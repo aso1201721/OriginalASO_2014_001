@@ -1,53 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/RelativeLayout1"
+    android:id="@+id/txvMsg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:baselineAligned="true"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/textView2"
+    <ImageView
+        android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="73dp"
         android:layout_weight="0.00"
-        android:text="　　　今日の運勢は・・・"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textView3"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="30dp"
-        android:layout_weight="0.00"
-        android:text="　　　今日の運勢は・・・"
-        android:textSize="20sp" />
+        android:scaleType="fitXY"
+        android:src="@drawable/daikichi" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_above="@+id/imageView1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp"
+        android:layout_marginBottom="24dp"
         android:layout_weight="0.00"
         android:text="大吉です"
         android:textSize="50sp" />
 
-    <ImageView
-        android:id="@+id/imageView1"
+    <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp"
+        android:layout_above="@+id/textView3"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_marginBottom="42dp"
         android:layout_weight="0.00"
-        android:scaleType="fitXY"
-        android:src="@drawable/daikichi" />
+        android:text="　　　今日の運勢は・・・"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginBottom="43dp"
+        android:layout_weight="0.00"
+        android:text="　　　今日の運勢は・・・"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txvMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_marginTop="36dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>
